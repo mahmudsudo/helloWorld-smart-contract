@@ -67,8 +67,10 @@ contract Ballot {
             !voters[voter].voted,
             "The voter already voted."
          );
-          require(voters[voter].weight == 0);
-        // this equal to the transaction before it
+         // this is my change to the code
+          // this is equal to the transaction before it
+         // require(voters[voter].weight == 0);
+       
         voters[voter].weight = 1;
     }
 
